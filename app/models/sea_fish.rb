@@ -1,0 +1,2 @@
+class SeaFish < ApplicationRecord
+end

@@ -1,0 +1,27 @@
+
+
+<div class="col-lg-12 form-group">
+    
+    <label for="">List Sea fish</label>
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Charac</th>
+        <th scope="col">Color</th>
+        <th scope="col">Size</th>
+        <th scope="col">Habit</th>
+        <th scope="col">Place</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @sea_fishes.each do |sea_fish| %>
+        <%= render sea_fish %>
+        <p>
+        </p>
+        <% end %>
+    </tbody>
+    </table>
+
+</div>
+<%= link_to "New sea fish", new_sea_fish_path %>

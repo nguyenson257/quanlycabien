@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @sea_fish %>
+
+<div>
+  <%= link_to "Edit this sea fish", edit_sea_fish_path(@sea_fish) %> |
+  <%= link_to "Back to sea fish", sea_fishes_path %>
+
+  <%= button_to "Destroy this sea fish", @sea_fish, method: :delete %>
+</div>
